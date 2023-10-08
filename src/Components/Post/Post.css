@@ -1,0 +1,13 @@
+.post-container{
+    display: flex;
+    float: left;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.post-container .card-header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
