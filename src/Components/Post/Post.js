@@ -91,7 +91,7 @@ const Post = () => {
                                 </div>
                             </div>
                         )
-                    }) : message.exist ? <p>{message.msg}</p> : <p>Posts not found</p>}
+                    }) : <p>Posts not found</p>}
                 </div>
             </div>
 

@@ -20,16 +20,13 @@ const Navigation = ({location, token, setToken}) => {
                         <div className="collapse navbar-collapse" id="navbarColor01">
                             <ul className="navbar-nav me-auto">
                                 <li className="nav-item">
-                                    <Link to={"/"} className={location == "home" ? "nav-link active" : "nav-link"}>Home</Link>
-                                </li>
-                                <li className="nav-item">
                                     <Link to={"/posts"} className={location == "posts" ? "nav-link active" : "nav-link"}>Posts</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">About</a>
                                 </li>
-                                <li className="nav-item">
-                                    <button type="button" onClick={handleLogout}>Logout</button>
+                                <li className="nav-item" style={{position: "absolute", right: "50px", lineHeight: "3.2"}}>
+                                    <button type="button" className="btn btn-warning" onClick={handleLogout}>Logout</button>
                                 </li>
                             </ul>
                         </div>
